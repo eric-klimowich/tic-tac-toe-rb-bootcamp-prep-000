@@ -96,4 +96,9 @@ WIN_COMBINATIONS = [
   
   def play(board)
   input = gets 
+  if won?(board)
+    puts "Congratulations #{winner(board)}!"
+  else
+    puts "Cats Game!"
+  end
 end
