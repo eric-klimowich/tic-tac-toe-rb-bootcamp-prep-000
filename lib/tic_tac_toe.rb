@@ -95,7 +95,7 @@ WIN_COMBINATIONS = [
   end
   
   def play(board)
-  input = gets 
+  until over?(board)
   if won?(board)
     puts "Congratulations #{winner(board)}!"
   else
