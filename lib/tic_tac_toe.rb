@@ -97,7 +97,6 @@ WIN_COMBINATIONS = [
   def play(board)
     current_player(board)
   until over?(board)
-    current_player(board)
     turn(board)
     draw?(board)
   end
