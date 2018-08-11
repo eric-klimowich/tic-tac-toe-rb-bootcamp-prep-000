@@ -95,13 +95,12 @@ WIN_COMBINATIONS = [
   end
   
   def play(board)
-    current_player(board)
-  until over?(board)
-    turn(board)
+    until over?(board)
+      turn(board)
+    end
+    if won?(board)
+      puts "Congratulations #{winner(board)}!"
+    else
+      puts "Cat's Game!"
+    end
   end
-  if won?(board)
-    puts "Congratulations #{winner(board)}!"
-  else
-    puts "Cat's Game!"
-  end
-end
