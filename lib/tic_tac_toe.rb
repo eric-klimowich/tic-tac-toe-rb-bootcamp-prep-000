@@ -96,7 +96,8 @@ WIN_COMBINATIONS = [
   
   def play(board)
   until over?(board)
-  
+    turn(board)
+    current_player(board)
   if won?(board)
     puts "Congratulations #{winner(board)}!"
   else
