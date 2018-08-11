@@ -98,6 +98,7 @@ WIN_COMBINATIONS = [
   until over?(board)
     turn(board)
     current_player(board)
+    draw?(board)
   end
   if won?(board)
     puts "Congratulations #{winner(board)}!"
